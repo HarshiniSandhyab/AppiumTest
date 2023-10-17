@@ -35,8 +35,9 @@ public class SampleTest {
 
     @Test
     public void sampleTest() throws InterruptedException {
+        String filePath = "/Users/testvagrant/Documents/workspace2/AppiumProject/data.json";
         Screen screen = new Screen(driver);
-        screen.login();
+        screen.login(filePath);
     }
 
     @AfterTest
